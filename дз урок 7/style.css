@@ -1,0 +1,25 @@
+.block{
+  width: 100%;
+  height: 120px;
+  background-color: #342b2b;
+}
+.block_1{
+  width: 100px;
+  height: 100px;
+  background-color: #d15b5b;
+}
+.element{
+  width: 300px;
+  height: 75px;
+  background-color: #b255e3;
+}
+.fiola{
+color: #730caa;
+}
+.beliy1{
+  color: aliceblue;
+}
+.beliy{
+  color: aliceblue;
+  background-color: #560853;
+}
