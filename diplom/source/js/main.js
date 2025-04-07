@@ -465,6 +465,7 @@
         if (item !== accordionItem) {
           item.classList.remove('control--icon--opened');
           item.querySelector('.accordion-list__content').style.maxHeight = null;
+          item.querySelector('.accordion-list__content').style.marginBottom = ''; // Добавлено
         }
       });
 
@@ -473,8 +474,10 @@
 
       if (accordionItem.classList.contains('control--icon--opened')) {
         accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+        accordionContent.style.marginBottom = '20px'; // Добавлено
       } else {
         accordionContent.style.maxHeight = null;
+        accordionContent.style.marginBottom = ''; // Добавлено
       }
     });
   });
