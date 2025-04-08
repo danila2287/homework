@@ -273,8 +273,9 @@ cursor: pointer;
   object-fit: cover;
 }
 
-.hero-content {}
-
+.hero-content {
+  z-index: 2;
+}
 .hero-info {}
 
 .hero-text {
