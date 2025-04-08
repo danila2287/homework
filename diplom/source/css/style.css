@@ -128,7 +128,7 @@ body {
   display: flex;
   gap: 53px;
   justify-self: center;
-  /* margin-left: 23.2%; */
+  z-index: 2;
 }
 
 .nav-item {
@@ -361,6 +361,7 @@ cursor: pointer;
   height: 586.09px;
   top: -26%;
   right: 28%;
+  
   /* z-index: -1; */
 }
 
