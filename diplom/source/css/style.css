@@ -28,6 +28,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .wrapper::before {
   content: "";
   position: fixed;
@@ -37,31 +38,27 @@ body {
   bottom: 0;
   pointer-events: none;
   z-index: 0;
-  background: 
-    linear-gradient(90deg, 
-      transparent 203px, 
-      rgba(255,255,255,0.2) 204px, 
-      rgba(255,255,255,0.2) 205px, 
-      transparent 205px
-    ),
-    linear-gradient(90deg, 
-      transparent calc(204px + (100% - 408px)/3 - 0.5px), 
-      rgba(255,255,255,0.2) calc(204px + (100% - 408px)/3 - 0.5px),
-      rgba(255,255,255,0.2) calc(204px + (100% - 408px)/3 + 0.5px),
-      transparent calc(204px + (100% - 408px)/3 + 0.5px)
-    ),
-    linear-gradient(90deg, 
-      transparent calc(204px + (100% - 408px)*2/3 - 0.5px), 
-      rgba(255,255,255,0.2) calc(204px + (100% - 408px)*2/3 - 0.5px),
-      rgba(255,255,255,0.2) calc(204px + (100% - 408px)*2/3 + 0.5px),
-      transparent calc(204px + (100% - 408px)*2/3 + 0.5px)
-    ),    
-    linear-gradient(90deg, 
-      transparent calc(100% - 205px), 
-      rgba(255,255,255,0.2) calc(100% - 204px), 
-      rgba(255,255,255,0.2) calc(100% - 203px), 
-      transparent calc(100% - 203px)
-    );
+  background:
+    linear-gradient(90deg,
+      transparent 203px,
+      rgba(255, 255, 255, 0.2) 204px,
+      rgba(255, 255, 255, 0.2) 205px,
+      transparent 205px),
+    linear-gradient(90deg,
+      transparent calc(204px + (100% - 408px)/3 - 0.5px),
+      rgba(255, 255, 255, 0.2) calc(204px + (100% - 408px)/3 - 0.5px),
+      rgba(255, 255, 255, 0.2) calc(204px + (100% - 408px)/3 + 0.5px),
+      transparent calc(204px + (100% - 408px)/3 + 0.5px)),
+    linear-gradient(90deg,
+      transparent calc(204px + (100% - 408px)*2/3 - 0.5px),
+      rgba(255, 255, 255, 0.2) calc(204px + (100% - 408px)*2/3 - 0.5px),
+      rgba(255, 255, 255, 0.2) calc(204px + (100% - 408px)*2/3 + 0.5px),
+      transparent calc(204px + (100% - 408px)*2/3 + 0.5px)),
+    linear-gradient(90deg,
+      transparent calc(100% - 205px),
+      rgba(255, 255, 255, 0.2) calc(100% - 204px),
+      rgba(255, 255, 255, 0.2) calc(100% - 203px),
+      transparent calc(100% - 203px));
 }
 
 .container {
@@ -87,6 +84,9 @@ body {
   font-size: 13px;
   transition: var(--transition);
   text-transform: uppercase;
+}
+.button:hover{
+color: var(--general-text);
 }
 
 /* ================================================header */
@@ -210,7 +210,7 @@ body {
   align-items: center;
   justify-content: center;
   z-index: 11;
-cursor: pointer;
+  cursor: pointer;
 }
 
 .burger-icon span,
@@ -276,6 +276,7 @@ cursor: pointer;
 .hero-content {
   z-index: 2;
 }
+
 .hero-info {}
 
 .hero-text {
@@ -335,6 +336,11 @@ cursor: pointer;
 
 .hero-button {
   margin-bottom: 125px;
+  transition: var(--transition);
+}
+
+.hero-button:hover {
+  color: var(--general-text);
 }
 
 .hero-img_control {
@@ -362,7 +368,7 @@ cursor: pointer;
   height: 586.09px;
   top: -26%;
   right: 28%;
-  
+
   /* z-index: -1; */
 }
 
@@ -402,7 +408,12 @@ cursor: pointer;
   background: linear-gradient(217.15deg, rgb(255, 198, 25) 21.503%, rgb(246, 144, 32) 48.977%, rgb(236, 81, 40) 80.773%);
   border-radius: 50%;
 }
-
+.hero__social:hover svg path,
+.hero__social:hover .hero__social-text {
+  fill: var(--general-text);
+  color: var(--general-text);
+  transition: var(--transition);
+}
 .hero__social-text {
   display: block;
   color: rgb(246, 144, 32);
@@ -418,6 +429,7 @@ cursor: pointer;
 .header__buttom {
   max-width: 1920px;
 }
+
 .header__buttom {
   position: relative;
   z-index: 1;
@@ -487,7 +499,7 @@ cursor: pointer;
   width: 100%;
   margin-left: auto;
   height: 100%;
-  
+
 }
 
 .abaut__inner {
@@ -499,8 +511,8 @@ cursor: pointer;
 
 .abaut__nav {
   margin-bottom: 7.3%;
-z-index: 2;
-padding: 0 0 0px 15px;
+  z-index: 2;
+  padding: 0 0 0px 15px;
   /* margin-left: 36px; */
 }
 
@@ -823,9 +835,7 @@ padding: 0 0 0px 15px;
 /* ================================================================== */
 /* ================================================================== */
 /* ================================================================== */
-.advantages {
-  
-}
+.advantages {}
 
 .container {}
 
@@ -1069,11 +1079,11 @@ background: url(HTB1gM);
 /* ====================================================================== */
 .chat-bot {
   background-color: #131517;
-  
+
 }
 
 .chat-bot__inner {
-  padding-bottom:96px;
+  padding-bottom: 96px;
   padding-top: 109px;
 }
 
@@ -1243,8 +1253,7 @@ background: url(HTB1gM);
   stroke: #ffffff60;
 }
 
-.chat-bot__swiper {
-}
+.chat-bot__swiper {}
 
 .chat-bot__swiper-wrapper {
   overflow: visible;
@@ -1596,6 +1605,10 @@ background: url(HTB1gM);
   display: flex;
   gap: 17px;
   align-items: center;
+  transition: var(--transition);
+}
+.footer__item:hover {
+  color: #f69020;
 }
 
 .footer__item-mobile {
@@ -1630,6 +1643,9 @@ background: url(HTB1gM);
   margin-right: 6%;
   border: 1px solid rgb(246, 144, 32);
   background-color: transparent;
+}
+.footer__button:hover{
+  color: #f69020;
 }
 
 
@@ -1717,9 +1733,11 @@ background: url(HTB1gM);
   .circle {
     top: 59%;
   }
-.hero-girl{
-  top: -10%;
-}
+
+  .hero-girl {
+    top: -10%;
+  }
+
   .hero-micro {
     top: 51%;
   }
@@ -1966,11 +1984,12 @@ background: url(HTB1gM);
 
 @media (max-width:1000px) {
   .wrapper::before {
-    background: 
-      linear-gradient(90deg, transparent 66px, rgba(255,255,255,0.2) 67px, rgba(255,255,255,0.2) 68px, transparent 68px),
-      linear-gradient(90deg, transparent calc(50% - 0.5px), rgba(255,255,255,0.2) calc(50% - 0.5px), rgba(255,255,255,0.2) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
-      linear-gradient(90deg, transparent calc(100% - 68px), rgba(255,255,255,0.2) calc(100% - 67px), rgba(255,255,255,0.2) calc(100% - 66px), transparent calc(100% - 66px));
+    background:
+      linear-gradient(90deg, transparent 66px, rgba(255, 255, 255, 0.2) 67px, rgba(255, 255, 255, 0.2) 68px, transparent 68px),
+      linear-gradient(90deg, transparent calc(50% - 0.5px), rgba(255, 255, 255, 0.2) calc(50% - 0.5px), rgba(255, 255, 255, 0.2) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
+      linear-gradient(90deg, transparent calc(100% - 68px), rgba(255, 255, 255, 0.2) calc(100% - 67px), rgba(255, 255, 255, 0.2) calc(100% - 66px), transparent calc(100% - 66px));
   }
+
   /* =================================== */
   .nav-item .nav-link__none+a {
     display: none;
@@ -1989,17 +2008,21 @@ background: url(HTB1gM);
   .nav-item .nav-link__none {
     display: none;
   }
+
   /* ============== */
   .hero-girl {
     top: -2%;
   }
+
   .circle {
     top: 54%;
-}
-.hero-micro {
-  top: 51%;
-  right: 15%;
-}
+  }
+
+  .hero-micro {
+    top: 51%;
+    right: 15%;
+  }
+
   /* ========================= */
 
   .hero__hall {
@@ -2126,10 +2149,11 @@ background: url(HTB1gM);
   .circle {
     right: 21%;
     top: 51%;
-}
-.hero-girl {
-  top: 2%;
-}
+  }
+
+  .hero-girl {
+    top: 2%;
+  }
 
   .circle img {
     width: 96%;
@@ -2201,14 +2225,17 @@ background: url(HTB1gM);
   .chat-bot__swiper-wrapper {
     margin-bottom: 0;
   }
-  .chat-bot__inner{
+
+  .chat-bot__inner {
     padding-top: 67px;
     padding-bottom: 70px;
   }
+
   /* ============================= */
   .main__questions {
     padding-top: 53px;
-}
+  }
+
   /* ================================== */
   .footer__item-mobile>a {
     display: none;
@@ -2252,10 +2279,11 @@ background: url(HTB1gM);
 
 @media (max-width:600px) {
   .wrapper::before {
-    background: 
-      linear-gradient(90deg, transparent 66px, rgba(255,255,255,0.2) 67px, rgba(255,255,255,0.2) 68px, transparent 68px),
-      linear-gradient(90deg, transparent calc(100% - 68px), rgba(255,255,255,0.2) calc(100% - 67px), rgba(255,255,255,0.2) calc(100% - 66px), transparent calc(100% - 66px));
+    background:
+      linear-gradient(90deg, transparent 66px, rgba(255, 255, 255, 0.2) 67px, rgba(255, 255, 255, 0.2) 68px, transparent 68px),
+      linear-gradient(90deg, transparent calc(100% - 68px), rgba(255, 255, 255, 0.2) calc(100% - 67px), rgba(255, 255, 255, 0.2) calc(100% - 66px), transparent calc(100% - 66px));
   }
+
   /* =================================== */
   .nav-link__mobile a {
     display: none;
@@ -2318,9 +2346,11 @@ background: url(HTB1gM);
     top: 46%;
     right: 11%;
   }
+
   .hero-girl {
     top: -11%;
   }
+
   /* ============================ */
   .header__col {
     flex-direction: column;
@@ -2444,6 +2474,11 @@ background: url(HTB1gM);
 
   .abaut__button {
     justify-self: start;
+    transition: var(--transition);
+  }
+
+  .abaut__button:hover {
+    color: var(--general-text);
   }
 
   .abaut__slider {
@@ -2526,11 +2561,12 @@ background: url(HTB1gM);
   }
 
   .footer__refund {
-    
+
     top: 9%;
     right: 3%;
   }
-  .footer__icon{
+
+  .footer__icon {
     width: 44px;
     height: 44px;
   }
@@ -2623,6 +2659,10 @@ background: url(HTB1gM);
 
   .advantages__button {
     display: none;
+    transition: var(--transition);
+  }
+  .advantages__button:hover {
+    color: var(--general-text);
   }
 
   .advantages__button-mobile {
@@ -2643,7 +2683,9 @@ background: url(HTB1gM);
     transition: var(--transition);
     text-transform: uppercase;
   }
-
+  .advantages__button-mobile:hover{
+    color: var(--general-text);
+  }
   .advantages__inner {
     margin-bottom: 0;
   }
@@ -2715,6 +2757,7 @@ background: url(HTB1gM);
     right: -134%;
     /* top: -7%; */
   }
+
   .circle {
     top: 36%;
     right: -26%;
